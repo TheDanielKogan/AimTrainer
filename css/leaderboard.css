@@ -1,0 +1,34 @@
+/*
+Daniel Kogan
+March 24, 2026
+CSS File for the program, does all the stylings for the leaderboard page
+*/
+
+
+#lbcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.settingsheader {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.objcontainer {
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 2%;
+}
+
+#title {
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    #lbcontainer {
+        flex-direction: column;
+    }
+}

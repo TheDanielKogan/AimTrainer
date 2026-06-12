@@ -1,0 +1,46 @@
+/*
+Daniel Kogan
+March 24, 2026
+CSS File for the program, does all the stylings login page
+*/
+
+input {
+    border-radius: 5px;
+    padding: 2%;
+    color: black;
+    font-size: 18px;
+}
+
+p {
+    font-size: 17px;
+}
+
+#errormessage {
+    text-align: center;
+    visibility: hidden;
+    color: lightcoral;
+}
+
+.inpcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+
+input[type="submit"] {
+    margin: 5%;
+    padding: 3%;
+    margin-top: 20%;
+}
+
+#formcontainer {
+    padding: 5%;
+    margin-top: 5%;
+    background-color: rgb(100, 100, 100);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    border-radius: 5px;
+}

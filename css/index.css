@@ -1,0 +1,255 @@
+/*
+Daniel Kogan
+March 24, 2026
+CSS File for the program, does all the global stylings
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+#settings {
+    display: flex;
+}
+
+
+#splashpage {
+    border: black solid 1px;
+}
+
+input[type=radio] {
+    appearance: none;
+}
+
+#title {
+    font-size: 64px;
+    color: rgb(170, 220, 255);
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+#startpage {
+    display: none;
+}
+
+.selector {
+    border: white solid 1px;
+    border-radius: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 5%;
+    display: flex;
+    justify-self: center;
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+    justify-content: center;
+    font-size: 24px;
+    width: 50%;
+}
+
+.selectorcontainer {
+    width: 25%;
+    text-align: center;
+}
+
+.settingsheader {
+    font-size: 32px;
+    border-bottom: 3px solid rgb(60, 60, 60);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 1.5%;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+input[type="radio"]:checked+label {
+    background-color: rgb(75, 75, 75);
+    border: rgb(200, 255, 200) solid 2px;
+}
+
+.button {
+    display: flex;
+    justify-self: center;
+    background-color: rgb(200, 255, 200);
+    color: black;
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 32px;
+    margin-top: 0%;
+    cursor: pointer;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+}
+
+#bottombtns {
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    background-color: rgb(67, 67, 67);
+    width: 100%;
+    height: 75px;
+    align-items: center;
+}
+
+#gamewindow {
+    display: none;
+}
+
+#helpinfo {
+    visibility: hidden;
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1.5%;
+    margin: 1%;
+    width: 30%;
+    justify-self: center;
+    font-size: 18px;
+}
+
+#helpinfo p {
+    color: black;
+}
+
+#gameoverwindow {
+    display: none;
+}
+
+.scorecontainer {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-items: center;
+    text-align: center;
+    margin-left: 5%;
+}
+
+#score {
+    font-size: 32px;
+    justify-content: center;
+    justify-self: center;
+    margin-left: 50%;
+}
+
+#targetIcon {
+    position: relative;
+    top: 0px;
+    margin-left: 5px;
+}
+
+#pbs {
+    width: 50%;
+    text-align: center;
+}
+
+#timeleft {
+    display: block;
+    width: 50%;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(200, 255, 200);
+    border-radius: 5px;
+}
+
+#timerProgress {
+    display: block;
+    height: 20px;
+    border-radius: 25%;
+    background-color: white;
+    appearance: none;
+}
+
+#finalscorecontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#finaltargeticon {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#finalscore {
+    text-align: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.finalsettings {
+    font-size: 22px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    #settings {
+        display: block;
+        justify-items: center;
+    }
+
+    .selectorcontainer {
+        width: 100%;
+    }
+
+    .settingsheader {
+        margin: 5%;
+    }
+
+    #timeleft {
+        width: auto;
+    }
+
+    #pbs {
+        width: 100%;
+    }
+
+    #scorecontainer {
+        margin-left: 5%;
+        width: 50%;
+    }
+
+    #score {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    #bottombtns {
+        display: block;
+    }
+
+    #helpinfo {
+        width: 80%;
+    }
+}
